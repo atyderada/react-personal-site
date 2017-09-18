@@ -11,7 +11,7 @@ import {
     RevealText,
     SportsCard,
     ParallexText,
-} from './Content.style'; 
+} from './Content.style';
 
 export default class Content extends Component {
     static propsTypes = {};
@@ -37,20 +37,11 @@ export default class Content extends Component {
                         <WhenInView>
                             {({ isInView }) =>
                                 <RevealText hide={!isInView}>
-                                    I was born and raised in the vibrant city of La Paz, Bolivia. I couldn't be 
-                                    more grateful for growing up in such a unique place with a diverse culture and customs.
-                                    I recently started documenting many of these and capturing the magical moments. You can 
-                                    see some of them in the photograpy section of the page.
-                                </RevealText>
-                            }
-                        </WhenInView>
-                        <WhenInView>
-                            {({ isInView }) =>
-                                <RevealText hide={!isInView}>
-                                    I was born and raised in the vibrant city of La Paz, Bolivia. I couldn't be 
-                                    more grateful for growing up in such a unique place with a diverse culture and customs.
-                                    I recently started documenting many of these and capturing the magical moments. You can 
-                                    see some of them in the photograpy section of the page.
+                                    About Me Text
+                                    // I was born and raised in the vibrant city of La Paz, Bolivia. I couldn't be
+                                    // more grateful for growing up in such a unique place with a diverse culture and customs.
+                                    // I recently started documenting many of these and capturing the magical moments. You can
+                                    // see some of them in the photograpy section of the page.
                                 </RevealText>
                             }
                         </WhenInView>
@@ -69,10 +60,7 @@ export default class Content extends Component {
                         <WhenInView>
                             {({ isInView }) =>
                                 <RevealText hide={!isInView}>
-                                    I was born and raised in the vibrant city of La Paz, Bolivia. I couldn't be 
-                                    more grateful for growing up in such a unique place with a diverse culture and customs.
-                                    I recently started documenting many of these and capturing the magical moments. You can 
-                                    see some of them in the photograpy section of the page.
+                                    Websites Section
                                 </RevealText>
                             }
                         </WhenInView>
@@ -91,10 +79,7 @@ export default class Content extends Component {
                         <WhenInView>
                             {({ isInView }) =>
                                 <RevealText hide={!isInView}>
-                                    I was born and raised in the vibrant city of La Paz, Bolivia. I couldn't be 
-                                    more grateful for growing up in such a unique place with a diverse culture and customs.
-                                    I recently started documenting many of these and capturing the magical moments. You can 
-                                    see some of them in the photograpy section of the page.
+                                    Display photos here
                                 </RevealText>
                             }
                         </WhenInView>
@@ -113,14 +98,11 @@ export default class Content extends Component {
                         <WhenInView>
                             {({ isInView }) =>
                                 <RevealText hide={!isInView}>
-                                    I was born and raised in the vibrant city of La Paz, Bolivia. I couldn't be 
-                                    more grateful for growing up in such a unique place with a diverse culture and customs.
-                                    I recently started documenting many of these and capturing the magical moments. You can 
-                                    see some of them in the photograpy section of the page.
+                                    Some cards with sports feeds
                                 </RevealText>
                             }
                         </WhenInView>
-                        
+
                         {/*<SportsCard>
                             <Parallax
                                 className="custom-class"
@@ -144,10 +126,10 @@ export default class Content extends Component {
                                 tag="text"
                             >
                                 <ParallexText>
-                                    <p> 
-                                        I was born and raised in the vibrant city of La Paz, Bolivia. I couldn't be 
+                                    <p>
+                                        I was born and raised in the vibrant city of La Paz, Bolivia. I couldn't be
                                         more grateful for growing up in such a unique place with a diverse culture and customs.
-                                        I recently started documenting many of these and capturing the magical moments. You can 
+                                        I recently started documenting many of these and capturing the magical moments. You can
                                         see some of them in the photograpy section of the page.
                                     </p>
                                 </ParallexText>
@@ -168,20 +150,7 @@ export default class Content extends Component {
                         <WhenInView>
                             {({ isInView }) =>
                                 <RevealText hide={!isInView}>
-                                    I was born and raised in the vibrant city of La Paz, Bolivia. I couldn't be 
-                                    more grateful for growing up in such a unique place with a diverse culture and customs.
-                                    I recently started documenting many of these and capturing the magical moments. You can 
-                                    see some of them in the photograpy section of the page.
-                                </RevealText>
-                            }
-                        </WhenInView>
-                        <WhenInView>
-                            {({ isInView }) =>
-                                <RevealText hide={!isInView}>
-                                    I was born and raised in the vibrant city of La Paz, Bolivia. I couldn't be 
-                                    more grateful for growing up in such a unique place with a diverse culture and customs.
-                                    I recently started documenting many of these and capturing the magical moments. You can 
-                                    see some of them in the photograpy section of the page.
+                                    Have a music player  ( google play music ? spotify ? youtube ?)
                                 </RevealText>
                             }
                         </WhenInView>
