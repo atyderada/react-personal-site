@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width: 60%;
+    width: 70%;
     display: block;
     margin: auto;
 
     @media screen and (max-width: 850px) {
-        width: 70%
+        width: 65%
     }
 
     @media screen and (max-width: 500px) {
-        width: 75%
+        width: 60%
     }
 `;

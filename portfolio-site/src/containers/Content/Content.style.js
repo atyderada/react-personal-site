@@ -4,11 +4,11 @@ export const OuterContainer = styled.div `
     margin-top: 8vh;
     z-index: 1;
 
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 800px) {
         margin-top: 5vh;
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 550px) {
         margin-top: 4vh;
     }
 `;
@@ -19,11 +19,11 @@ export const ImageContainer = styled.div `
     display: block;
     margin: auto;
 
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 800px) {
         width: 80%
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 550px) {
         width: 100%
     }
 `;
@@ -38,16 +38,16 @@ export const Image = styled.img `
 `;
 
 export const SectionContainer = styled.div `
-    padding-top: 70px;
+    padding-top: 5vh;
     display: flex;
     flex-direction: column;
 
-    @media screen and (max-width: 750px) {
-        padding-top: 50px;
+    @media screen and (max-width: 800px) {
+        padding-top: 3vh;
     }
 
-    @media screen and (max-width: 500px) {
-        padding-top: 40px;
+    @media screen and (max-width: 550px) {
+        padding-top: 2vh;
     }
 `;
 
@@ -58,12 +58,12 @@ export const RevealTitle =  styled.p `
     margin: 0px 130px;
     position: relative;
 
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 800px) {
         font-size: 15px;
         margin: 0px 100px;
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 550px) {
         font-size: 12px;
         margin: 0px 70px;
     }
@@ -96,11 +96,11 @@ export const RevealText =  styled.p `
     text-justify: inter-word;
     position: relative;
 
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 800px) {
         font-size: 11px;
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 550px) {
         font-size: 9px;
     }
 
