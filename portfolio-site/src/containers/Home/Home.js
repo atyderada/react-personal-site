@@ -38,7 +38,7 @@ export default class Home extends Component {
                         </a>
                     </FooterButton>
                     <FooterButton>
-                        <a href="https://www.instagram.com/atyderada/" target="_blank">
+                        <a href="https://www.instagram.com/tony_derada/" target="_blank">
                             <img src={require('../../assets/images/Instagram-icon.png')} alt="instagram" />
                         </a>
                     </FooterButton>
