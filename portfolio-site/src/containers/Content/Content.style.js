@@ -2,7 +2,14 @@ import styled, {css} from 'styled-components';
 
 export const OuterContainer = styled.div `
     margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     z-index: 1;
+
+    @media screen and (max-width: 1050px) {
+        margin-top: 5.5vh;
+    }
 
     @media screen and (max-width: 800px) {
         margin-top: 5vh;
@@ -15,12 +22,16 @@ export const OuterContainer = styled.div `
 
 export const ImageContainer = styled.div `
     overflow: hidden;
-    width: 70%;
+    width: 65%;
     display: block;
     margin: auto;
 
+    @media screen and (max-width: 1050px) {
+        width: 70%
+    }
+
     @media screen and (max-width: 800px) {
-        width: 80%
+        width: 75%
     }
 
     @media screen and (max-width: 550px) {
@@ -57,6 +68,11 @@ export const RevealTitle =  styled.p `
     font-weight: bolder;
     margin: 0px 130px;
     position: relative;
+
+    @media screen and (max-width: 1100px) {
+        font-size: 17px;
+        margin: 0px 110px;
+    }
 
     @media screen and (max-width: 800px) {
         font-size: 15px;
@@ -95,6 +111,10 @@ export const RevealText =  styled.p `
     text-align: justify;
     text-justify: inter-word;
     position: relative;
+
+    @media screen and (max-width: 1100px) {
+        font-size: 13px;
+    }
 
     @media screen and (max-width: 800px) {
         font-size: 11px;

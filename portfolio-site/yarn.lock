@@ -2,6 +2,12 @@
 # yarn lockfile v1
 
 
+"@amcharts/amcharts3-react@^3.0.0":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@amcharts/amcharts3-react/-/amcharts3-react-3.0.1.tgz#0cec8ff5d235659da768055d21cd3a90bcfbbcfd"
+  dependencies:
+    create-react-class "^15.5.2"
+
 abab@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/abab/-/abab-1.0.3.tgz#b81de5f7274ec4e756d797cd834f303642724e5d"
@@ -83,9 +89,17 @@ alphanum-sort@^1.0.1, alphanum-sort@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
 
+amcharts3@^3.21.2:
+  version "3.21.2"
+  resolved "https://registry.yarnpkg.com/amcharts3/-/amcharts3-3.21.2.tgz#4d4dc661059369267f74a2b028850f069314ac3c"
+
 amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
+
+"ammap3@github:amcharts/ammap3":
+  version "3.21.6"
+  resolved "https://codeload.github.com/amcharts/ammap3/tar.gz/1a50b79d20651b38195999eb524265e381a22fa4"
 
 anser@1.2.5:
   version "1.2.5"
@@ -1560,7 +1574,7 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-create-react-class@^15.5.1, create-react-class@^15.6.0:
+create-react-class@^15.5.1, create-react-class@^15.5.2, create-react-class@^15.6.0:
   version "15.6.0"
   resolved "https://registry.yarnpkg.com/create-react-class/-/create-react-class-15.6.0.tgz#ab448497c26566e1e29413e883207d57cfe7bed4"
   dependencies:

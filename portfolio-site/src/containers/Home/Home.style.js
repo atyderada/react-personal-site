@@ -2,6 +2,8 @@ import styled, {css} from 'styled-components';
 
 export const MainScreen = styled.div `
     display: flex;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -10,8 +12,7 @@ export const MainScreen = styled.div `
 export const Header = styled.div `
     position: fixed;
     top: 0;
-    left: 15%;
-    width: 70%;
+    width: 75%;
     height: 6.5vh;
     display: flex;
     align-items: center;
@@ -21,6 +22,9 @@ export const Header = styled.div `
 
     z-index: 10;
 
+    @media screen and (max-width: 1100px) {
+        height: 5.5vh;
+    }
 
     @media screen and (max-width: 800px) {
         height: 5vh;
@@ -45,6 +49,10 @@ export const HeaderButton = styled.p `
         transform: scale(1.2);
     }
 
+    @media screen and (max-width: 1100px) {
+        font-size: 12px;
+    }
+
     @media screen and (max-width: 800px) {
         font-size: 10px;
     }
@@ -63,9 +71,13 @@ export const Footer = styled.div `
     flex-direction: row;
     justify-content: space-around;
     background-color: white;
-
     z-index: 10;
 
+    @media screen and (max-width: 1100px) {
+      height: 5.5vh;
+      min-height: 40px;
+      margin: 35px 10% 20px;
+    }
 
     @media screen and (max-width: 800px) {
         height: 5vh;
@@ -95,7 +107,12 @@ export const FooterButton = styled.span `
         transform: scale(1.3);
     }
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1100px) {
+      width: 30px;
+      height: 30px;
+    }
+
+    @media screen and (max-width: 825px) {
         width: 25px;
         height: 25px;
     }

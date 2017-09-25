@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component  } from 'react';
 import { Container } from 'theme/grid';
 import { Parallax } from 'react-scroll-parallax';
 import WhenInView from 'components/WhenInView/WhenInView';
@@ -12,9 +12,13 @@ import {
     SportsCard,
     ParallexText,
 } from './Content.style';
+import AmCharts from '@amcharts/amcharts3-react';
+import 'ammap3/ammap/ammap'
 
 export default class Content extends Component {
-    static propsTypes = {};
+  constructor(props) {
+    super(props);
+  }
 
     render() {
         return (
@@ -85,11 +89,11 @@ export default class Content extends Component {
                         </WhenInView>
                     </SectionContainer>
 
-                    <SectionContainer id="sports">
+                    <SectionContainer id="travel">
                         <WhenInView>
                             {({ isInView }) =>
                                 <RevealTitle hide={!isInView}>
-                                    Sports
+                                    Travel
                                     <hr />
                                 </RevealTitle>
                             }
@@ -98,62 +102,191 @@ export default class Content extends Component {
                         <WhenInView>
                             {({ isInView }) =>
                                 <RevealText hide={!isInView}>
-                                    Some cards with sports feeds
+                                    <p>Travelling is one of my favorite hobbies</p>
+                                    <p>Here you can see an interactive map with the countries Ive been to</p>
                                 </RevealText>
                             }
                         </WhenInView>
 
-                        {/*<SportsCard>
-                            <Parallax
-                                className="custom-class"
-                                offsetYMax={8}
-                                offsetYMin={-14}
-                                offsetXMax={45}
-                                offsetXMin={0}
-                                slowerScrollRate
-                                tag="figure"
-                            >
-                                <img src={require('../../assets/images/isaiah-thomas.jpg')} alt="isaiah-thomas" width='300px'/>
-                            </Parallax>
+                        <AmCharts.React
+                          style={{
+                            width: "95%",
+                            height: "450px",
+                            margin: "auto",
+                          }}
+                          options={{
+                            "type": "map",
+                            "theme": "dark",
+                            "projection": "miller",
+                            "background-color" : "#ffffff",
+                            "dataProvider": {
+                              "map": "worldLow",
+                              "getAreasFromMap": false,
+                              "areas" :
+                              [
+                              	{
+                              		"id": "HR",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "CZ",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "DK",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "EE",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "FR",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "DE",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "GR",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "IT",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "LV",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "LI",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "LT",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "RU",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "ES",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "SE",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "GB",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "VA",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "CR",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "CW",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "DO",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "HT",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "JM",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "MX",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "PR",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "US",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "AR",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "BO",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "BR",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "CL",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "CO",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "PY",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "PE",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "UY",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "VE",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "EG",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "NA",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "ZA",
+                              		"showAsSelected": true
+                              	},
+                              	{
+                              		"id": "JP",
+                              		"showAsSelected": true
+                              	}
+                              ]
+                            },
+                            "areasSettings" : {
+                              "autoZoom" : true,
+                              "color" : "#ffffff",
+                              "colorSolid" : "#ffffff",
+                              "selectedColor" : "#777777",
+                              "outlineColor" : "#dddddd",
+                              "rollOverColor" : "#ffffff",
+                              "rollOverOutlineColor" : "#777777"
 
-                            <Parallax
-                                className="custom-class"
-                                offsetYMax={-10}
-                                offsetYMin={2}
-                                offsetXMax={-30}
-                                offsetXMin={1}
-                                slowerScrollRate
-                                tag="text"
-                            >
-                                <ParallexText>
-                                    <p>
-                                        I was born and raised in the vibrant city of La Paz, Bolivia. I couldn't be
-                                        more grateful for growing up in such a unique place with a diverse culture and customs.
-                                        I recently started documenting many of these and capturing the magical moments. You can
-                                        see some of them in the photograpy section of the page.
-                                    </p>
-                                </ParallexText>
-                            </Parallax>
-                        </SportsCard>*/}
-                    </SectionContainer>
-
-                    <SectionContainer id="music">
-                        <WhenInView>
-                            {({ isInView }) =>
-                                <RevealTitle hide={!isInView}>
-                                    Music
-                                    <hr />
-                                </RevealTitle>
                             }
-                        </WhenInView>
+                          }}
+                          />
 
-                        <WhenInView>
-                            {({ isInView }) =>
-                                <RevealText hide={!isInView}>
-                                    Have a music player  ( google play music ? spotify ? youtube ?)
-                                </RevealText>
-                            }
-                        </WhenInView>
                     </SectionContainer>
                 </Container>
             </OuterContainer>

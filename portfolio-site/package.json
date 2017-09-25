@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "amcharts3": "^3.21.2",
+    "@amcharts/amcharts3-react": "^3.0.0",
+    "ammap3": "github:amcharts/ammap3",
     "autoprefixer": "7.1.1",
     "babel-core": "6.25.0",
     "babel-eslint": "7.2.3",
