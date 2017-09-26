@@ -160,8 +160,8 @@ export const IconsContainer = styled.div `
 `;
 
 export const Icon = styled.img `
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     transition: transform .2s;
     margin-top: 4px;
 
@@ -171,14 +171,14 @@ export const Icon = styled.img `
 
     @media screen and (max-width: 1050px) {
         margin-top: 2px;
-        width: 130px;
-        height: 130px;
+        width: 100px;
+        height: 100px;
     }
 
     @media screen and (max-width: 800px) {
         margin-top: 0px;
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
     }
 `;
 
