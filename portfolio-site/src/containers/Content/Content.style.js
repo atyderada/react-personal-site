@@ -5,6 +5,7 @@ export const OuterContainer = styled.div `
     flex-direction: column;
     justify-content: center;
     z-index: 1;
+    margin-top: 6.5vh;
 
     @media screen and (max-width: 1050px) {
         margin-top: 5.5vh;
@@ -20,7 +21,6 @@ export const OuterContainer = styled.div `
 `;
 
 export const ImageContainer = styled.div `
-    padding-top: 6.6vh;
     overflow: hidden;
     width: 70%;
     display: block;
@@ -112,21 +112,22 @@ export const RevealTitle =  styled.p `
 `;
 
 export const RevealText =  styled.p `
-    font-size: 15px;
+    font-size: 12pt;
+    line-height: 18pt;
     text-align: justify;
     text-justify: inter-word;
     position: relative;
 
     @media screen and (max-width: 1050px) {
-        font-size: 13px;
+        font-size: 10pt;
     }
 
     @media screen and (max-width: 800px) {
-        font-size: 11px;
+        font-size: 9pt;
     }
 
     @media screen and (max-width: 550px) {
-        font-size: 9px;
+        font-size: 7pt;
     }
 
     &:after {
@@ -154,22 +155,19 @@ export const RevealText =  styled.p `
 export const PhotoGallery = styled.div `
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
 
   @media screen and (max-width: 1050px) {
-      margin-top: 10px;
+      margin-top: 2px;
   }
 
   @media screen and (max-width: 800px) {
-      margin-top: 5px;
+      margin-top: 0px;
   }
-
 `;
 
 export const Row = styled.div `
   display: flex;
   flex-direction: row;
-  margin: 0px;
   height: 27vh;
 
   @media screen and (max-width: 1300px) {
@@ -190,7 +188,7 @@ export const PhotoContainerR = styled.div `
      -moz-transform: skew(-2deg);
        -o-transform: skew(-2deg);
   overflow: hidden;
-  margin: 13px 8px 0px;
+  margin: 0px 5px 10px;
   flex: 1;
 `;
 
@@ -199,30 +197,30 @@ export const PhotoContainerL = styled.div `
      -moz-transform: skew(2deg);
        -o-transform: skew(2deg);
   overflow: hidden;
-  margin: 13px 8px 0px;
+  margin: 0px 5px 10px;
   flex: 1;
 `;
 
 export const MapContainer = styled.div `
-  width: 95%;
-  height: 450px;
-  margin: 10px;
+  width: 100%;
+  height: 50vh;
+  margin-top: 10px;
 
-  @media screen and (max-width: 1050px) {
-      height: 400px;
+  @media screen and (max-width: 1200px) {
+      height: 30vh;
   }
 
   @media screen and (max-width: 800px) {
-      height: 350px;
+      height: 25vh;
   }
 
   @media screen and (max-width: 700px) {
-      height: 300px;
-      margin: 6px;
+      height: 20vh;
+      margin-top: 6px;
   }
 
   @media screen and (max-width: 550px) {
-      height: 200px;
+      height: 15vh;
   }
 `;
 

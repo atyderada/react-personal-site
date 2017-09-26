@@ -46,11 +46,10 @@ export default class Content extends Component {
                         <WhenInView>
                             {({ isInView }) =>
                                 <RevealText hide={!isInView}>
-                                    About Me Text
-                                    // I was born and raised in the vibrant city of La Paz, Bolivia. I couldn't be
-                                    // more grateful for growing up in such a unique place with a diverse culture and customs.
-                                    // I recently started documenting many of these and capturing the magical moments. You can
-                                    // see some of them in the photograpy section of the page.
+                                    I was born and raised in the vibrant city of La Paz, Bolivia. I couldnt be
+                                    more grateful for growing up in such a unique place with a diverse culture and customs.
+                                    I recently started documenting many of these and capturing the magical moments. You can
+                                    see some of them in the photograpy section of the page.
                                 </RevealText>
                             }
                         </WhenInView>
@@ -82,6 +81,15 @@ export default class Content extends Component {
                                     Photography
                                     <hr />
                                 </RevealTitle>
+                            }
+                        </WhenInView>
+
+                        <WhenInView>
+                            {({ isInView }) =>
+                                <RevealText hide={!isInView}>
+                                    I recently picked up Photography as a new hobby. I started out shooting with my smartphone but now I use a Nikon DSLR.
+                                    Here are my favorite shots from my trips over the summer.
+                                </RevealText>
                             }
                         </WhenInView>
 
@@ -132,8 +140,10 @@ export default class Content extends Component {
                         <WhenInView>
                             {({ isInView }) =>
                                 <RevealText hide={!isInView}>
-                                    <p>Travelling is one of my favorite hobbies</p>
-                                    <p>Here you can see an interactive map with the countries Ive been to</p>
+                                  I love traveling
+                                  <br />
+                                  Check out the map bellow with the countries I have visited !
+                                  (hover to display country names)
                                 </RevealText>
                             }
                         </WhenInView>
@@ -281,10 +291,6 @@ export default class Content extends Component {
                                   },
                                   {
                                     "id": "UY",
-                                    "showAsSelected": true
-                                  },
-                                  {
-                                    "id": "VE",
                                     "showAsSelected": true
                                   },
                                   {

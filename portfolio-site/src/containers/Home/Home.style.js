@@ -20,7 +20,7 @@ export const WhiteOverlay = styled.div `
 
     z-index: 10;
 
-    @media screen and (max-width: 1100px) {
+    @media screen and (max-width: 1050px) {
         height: 5.5vh;
     }
 
@@ -60,7 +60,7 @@ export const HeaderButton = styled.p `
         transform: scale(1.2);
     }
 
-    @media screen and (max-width: 1100px) {
+    @media screen and (max-width: 1050px) {
         font-size: 12px;
     }
 
@@ -84,7 +84,7 @@ export const Footer = styled.div `
     background-color: white;
     z-index: 10;
 
-    @media screen and (max-width: 1100px) {
+    @media screen and (max-width: 1050px) {
       height: 5.5vh;
       min-height: 40px;
       margin: 35px 10% 20px;
@@ -118,7 +118,7 @@ export const FooterButton = styled.span `
         transform: scale(1.3);
     }
 
-    @media screen and (max-width: 1100px) {
+    @media screen and (max-width: 1050px) {
       width: 30px;
       height: 30px;
     }
