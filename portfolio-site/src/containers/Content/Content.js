@@ -7,6 +7,8 @@ import {
     SectionContainer,
     Image,
     ImageContainer,
+    IconsContainer,
+    Icon,
     PhotoGallery,
     Row,
     PhotoContainerR,
@@ -46,13 +48,17 @@ export default class Content extends Component {
                         <WhenInView>
                             {({ isInView }) =>
                                 <RevealText hide={!isInView}>
-                                    I was born and raised in the vibrant city of La Paz, Bolivia. I couldnt be
-                                    more grateful for growing up in such a unique place with a diverse culture and customs.
-                                    I recently started documenting many of these and capturing the magical moments. You can
-                                    see some of them in the photograpy section of the page.
+                                    I am a 21 year old computer science student at the Rose Hulman Institute of technology.
+                                    I was born and raised in the vibrant city of La Paz, Bolivia. I am passionate about my
+                                    work, photograpy, travel, fitness and music. I made this site to share these things with you !
                                 </RevealText>
                             }
                         </WhenInView>
+
+                        <IconsContainer>
+                          <Icon src={require('../../assets/images/bolivia-map.png')} alt="Bolivia map" />
+                          <Icon src={require('../../assets/images/rose-hulman.png')} alt="Rose Hulman Icon" />
+                        </IconsContainer>
                     </SectionContainer>
 
                     <SectionContainer id="sites">
@@ -68,7 +74,10 @@ export default class Content extends Component {
                         <WhenInView>
                             {({ isInView }) =>
                                 <RevealText hide={!isInView}>
-                                    Websites Section
+                                    I love creating clean and beautiful sites from the ground up like this one. I enjoy designing,
+                                    developing and improving websites with top of the line technologies. I used InDesign, React and
+                                    Firebase to develop this site. Stay tuned as I finish my portfolio site built on Angular 4 that
+                                    showcases all my projects.
                                 </RevealText>
                             }
                         </WhenInView>
@@ -87,8 +96,7 @@ export default class Content extends Component {
                         <WhenInView>
                             {({ isInView }) =>
                                 <RevealText hide={!isInView}>
-                                    I recently picked up Photography as a new hobby. I started out shooting with my smartphone but now I use a Nikon DSLR.
-                                    Here are my favorite shots from my trips over the summer.
+                                    I recently picked up Photography as a hobby. Here are my favorite shots from last summer.
                                 </RevealText>
                             }
                         </WhenInView>
@@ -140,10 +148,7 @@ export default class Content extends Component {
                         <WhenInView>
                             {({ isInView }) =>
                                 <RevealText hide={!isInView}>
-                                  I love traveling
-                                  <br />
-                                  Check out the map bellow with the countries I have visited !
-                                  (hover to display country names)
+                                  I love traveling. Check out the map bellow with the countries that I have visited !
                                 </RevealText>
                             }
                         </WhenInView>

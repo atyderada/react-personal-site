@@ -152,9 +152,40 @@ export const RevealText =  styled.p `
     `}
 `;
 
+export const IconsContainer = styled.div `
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 3vh;
+`;
+
+export const Icon = styled.img `
+    width: 180px;
+    height: 180px;
+    transition: transform .2s;
+    margin-top: 4px;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    @media screen and (max-width: 1050px) {
+        margin-top: 2px;
+        width: 130px;
+        height: 130px;
+    }
+
+    @media screen and (max-width: 800px) {
+        margin-top: 0px;
+        width: 80px;
+        height: 80px;
+    }
+`;
+
 export const PhotoGallery = styled.div `
   display: flex;
   flex-direction: column;
+  margin-top: 4px;
 
   @media screen and (max-width: 1050px) {
       margin-top: 2px;
