@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
     MainScreen,
     Header,
+    WhiteOverlay,
     HeaderButton,
     Footer,
     FooterButton
@@ -15,6 +16,7 @@ export default class Home extends Component {
         return (
             <MainScreen>
 
+              <WhiteOverlay>
                 <Header>
                     <HeaderButton>
                       <a href="#home">
@@ -26,9 +28,10 @@ export default class Home extends Component {
                     <HeaderButton> <a href="#about">About</a> </HeaderButton>
                     <HeaderButton> <a href="#sites">Websites</a> </HeaderButton>
                     <HeaderButton> <a href="#photos">Photography</a> </HeaderButton>
-                    <HeaderButton> <a href="#sports">Sports</a> </HeaderButton>
-                    <HeaderButton> <a href="#music">Music</a> </HeaderButton>
+                    <HeaderButton> <a href="#travel">Travel</a> </HeaderButton>
                 </Header>
+              </WhiteOverlay>
+
                 <Content id="home">
                 </Content>
                 <Footer>

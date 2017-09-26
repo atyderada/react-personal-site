@@ -7,10 +7,10 @@ export const Container = styled.div`
     margin: auto;
 
     @media screen and (max-width: 850px) {
-        width: 65%
+        width: 70%
     }
 
     @media screen and (max-width: 500px) {
-        width: 60%
+        width: 75%
     }
 `;

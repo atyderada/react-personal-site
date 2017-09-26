@@ -9,15 +9,13 @@ export const MainScreen = styled.div `
     justify-content: center;
 `;
 
-export const Header = styled.div `
+export const WhiteOverlay = styled.div `
+    background-color: red;
+    opacity: 0.9;
     position: fixed;
     top: 0;
     width: 75%;
     height: 6.5vh;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
     background-color: white;
 
     z-index: 10;
@@ -35,6 +33,19 @@ export const Header = styled.div `
         width: 100%;
         left: 0;
     }
+`;
+
+export const Header = styled.div `
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: transparent;
+
+    z-index: 10;
 `;
 
 export const HeaderButton = styled.p `
