@@ -47,7 +47,7 @@ export default class Scene extends Component {
     	starsGeometry.vertices.push( vertex );
     }
 
-    var material = new THREE.PointsMaterial( { size: 4, sizeAttenuation: false, alphaTest: 0.5, transparent: true } );
+    var material = new THREE.PointsMaterial( { size: 3, sizeAttenuation: false, alphaTest: 0.5, transparent: true } );
 		material.color.setHSL( 1.0, 0.3, 0.7 );
     var starsMaterial = new THREE.PointsMaterial( { color: 0x777777 } );
 

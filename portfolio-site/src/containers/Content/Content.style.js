@@ -244,11 +244,7 @@ export const MapContainer = styled.div `
 
   @media screen and (max-width: 800px) {
       height: 25vh;
-  }
-
-  @media screen and (max-width: 700px) {
-      height: 20vh;
-      margin-top: 6px;
+      margin-top: 4px;
   }
 `;
 
