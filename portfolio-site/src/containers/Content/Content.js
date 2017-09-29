@@ -56,8 +56,12 @@ export default class Content extends Component {
                         </WhenInView>
 
                         <IconsContainer>
-                          <Icon src={require('../../assets/images/bolivia-map.png')} alt="Bolivia map" />
-                          <Icon src={require('../../assets/images/rose-hulman.png')} alt="Rose Hulman Icon" />
+                          <a href="https://www.youtube.com/playlist?list=PLFTQSQOjNIfNKpVekjwU3pzDtlZBKVYp3" target="_blank">
+                            <Icon src={require('../../assets/images/bolivia-map.png')} alt="Bolivia map" />
+                          </a>
+                          <a href="http://www.rose-hulman.edu/" target="_blank">
+                            <Icon src={require('../../assets/images/rose-hulman.png')} alt="Rose Hulman Icon" />
+                          </a>
                         </IconsContainer>
                     </SectionContainer>
 

@@ -4,8 +4,9 @@ export const OuterContainer = styled.div `
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 1;
+    z-index: 5;
     margin-top: 6.5vh;
+    background-color: transparent;
 
     @media screen and (max-width: 1050px) {
         margin-top: 5.5vh;
@@ -16,7 +17,7 @@ export const OuterContainer = styled.div `
     }
 
     @media screen and (max-width: 550px) {
-        margin-top: 4vh;
+        margin-top: 4.5vh;
     }
 `;
 
@@ -248,10 +249,6 @@ export const MapContainer = styled.div `
   @media screen and (max-width: 700px) {
       height: 20vh;
       margin-top: 6px;
-  }
-
-  @media screen and (max-width: 550px) {
-      height: 15vh;
   }
 `;
 

@@ -10,7 +10,6 @@ export const MainScreen = styled.div `
 `;
 
 export const WhiteOverlay = styled.div `
-    background-color: red;
     opacity: 0.9;
     position: fixed;
     top: 0;
@@ -81,7 +80,7 @@ export const Footer = styled.div `
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
-    background-color: white;
+    background-color: transparent;
     z-index: 10;
 
     @media screen and (max-width: 1050px) {

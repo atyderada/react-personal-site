@@ -8,6 +8,7 @@ import {
     FooterButton
 } from './Home.style';
 import Content from '../Content/Content';
+import Scene from '../Background/Background'
 
 export default class Home extends Component {
     static propsTypes = {};
@@ -32,8 +33,12 @@ export default class Home extends Component {
                 </Header>
               </WhiteOverlay>
 
+                <Scene id="3d-background">
+                </Scene>
+
                 <Content id="home">
                 </Content>
+
                 <Footer>
                     <FooterButton>
                         <a href="mailto:anthonyderada@gmail.com" target="_top">

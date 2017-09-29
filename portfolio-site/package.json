@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "amcharts3": "^3.21.2",
     "@amcharts/amcharts3-react": "^3.0.0",
+    "amcharts3": "^3.21.2",
     "ammap3": "github:amcharts/ammap3",
     "autoprefixer": "7.1.1",
     "babel-core": "6.25.0",
@@ -45,6 +45,7 @@
     "style-loader": "0.18.2",
     "styled-components": "^2.1.1",
     "sw-precache-webpack-plugin": "0.11.3",
+    "three": "^0.87.1",
     "url-loader": "0.5.9",
     "webpack": "2.6.1",
     "webpack-dev-server": "2.5.0",
