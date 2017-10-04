@@ -45,6 +45,7 @@ export default class Content extends Component {
                                 </RevealTitle>
                             }
                         </WhenInView>
+
                         <WhenInView>
                             {({ isInView }) =>
                                 <RevealText hide={!isInView}>
@@ -79,12 +80,17 @@ export default class Content extends Component {
                             {({ isInView }) =>
                                 <RevealText hide={!isInView}>
                                     I love creating clean and beautiful sites from the ground up like this one. I enjoy designing,
-                                    developing and improving websites with top of the line technologies. I used InDesign, React and
-                                    Firebase to develop this site. Stay tuned as I finish my portfolio site built on Angular 4 that
-                                    showcases all my projects.
+                                    developing and improving websites with top of the line technologies. I used InDesign, React, Three.js, and
+                                    Firebase to develop this site. Here is a link to my portfolio site where you can see my other projects!
                                 </RevealText>
                             }
                         </WhenInView>
+
+                        <a href="https://anthonyderada.myportfolio.com/" target="_blank">
+                          <ImageContainer>
+                            <Image src={require('../../assets/images/PortfolioSite.png')} alt="portfolio-site" />
+                          </ImageContainer>
+                        </a>
                     </SectionContainer>
 
                     <SectionContainer id="photos">
