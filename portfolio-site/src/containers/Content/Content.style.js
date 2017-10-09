@@ -26,6 +26,7 @@ export const ImageContainer = styled.div `
     width: 70%;
     display: block;
     margin: auto;
+    opacity: 0.87;
 
     @media screen and (max-width: 1050px) {
         width: 75%
@@ -165,6 +166,7 @@ export const Icon = styled.img `
     height: 150px;
     transition: transform .2s;
     margin-top: 4px;
+    opacity: 0.8;
 
     &:hover {
         transform: scale(1.1);
@@ -220,8 +222,9 @@ export const PhotoContainerR = styled.div `
      -moz-transform: skew(-2deg);
        -o-transform: skew(-2deg);
   overflow: hidden;
-  margin: 0px 5px 10px;
+  margin: 0px 2px 4px;
   flex: 1;
+  opacity: 0.87;
 `;
 
 export const PhotoContainerL = styled.div `
@@ -229,8 +232,9 @@ export const PhotoContainerL = styled.div `
      -moz-transform: skew(2deg);
        -o-transform: skew(2deg);
   overflow: hidden;
-  margin: 0px 5px 10px;
+  margin: 0px 2px 4px;
   flex: 1;
+  opacity: 0.87;
 `;
 
 export const MapContainer = styled.div `
